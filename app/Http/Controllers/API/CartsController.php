@@ -4,7 +4,7 @@ namespace App\Http\Controllers\API;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\cart;
+use App\Models\Cart;
 use App\Models\Order;
 use App\Models\User;
 use Auth;

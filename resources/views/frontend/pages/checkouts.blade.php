@@ -42,7 +42,12 @@
 						<p> Total Price - <strong>{{ $total_price }} Taka</strong></p>
 						<p> Shipping Cost - <strong>{{ App\Models\Setting::first()->shipping_cost }} Taka</strong> </p>
 
-						<p> Total Cost (Inc. Shipping cost) - <strong>{{ $total_price + App\Models\Setting::first()->shipping_cost }} Taka</strong></p>
+						<p> Total Cost (Inc. Shipping cost) - <strong>{{ $total1 = $total_price + App\Models\Setting::first()->shipping_cost }} Taka</strong></p>
+
+            <?php  Session::put('total1', $total1);  
+
+
+            ?>
 						
 
 					</div>
@@ -181,6 +186,8 @@
                               		 		</h3>
                               		 		
                               		 	</div>
+
+
                               		 	@else 
                               		 	 <div id="payment_{{$payment->short_name }}" class="hidden alert alert-success mt-4" >
                               		 	 	
@@ -217,6 +224,10 @@
 	
 			
 		</div>
+
+    <div class="col-md-12 text-center mt-4">
+      <a target="_blank" href="https://www.sslcommerz.com/" title="SSLCommerz" alt="SSLCommerz"><img style=" max-width: 950px; height:auto;" src="https://securepay.sslcommerz.com/public/image/SSLCommerz-Pay-With-logo-All-Size-03.png" /></a>
+    </div>
 
 	</div>
 

@@ -54,6 +54,7 @@ Route::group(['prefix' => 'carts'], function(){
 Route::group(['prefix' => 'checkout'], function(){
 	Route::get('/', 'Frontend\CheckoutsController@index')->name('checkouts');
 	Route::post('/store', 'Frontend\CheckoutsController@store')->name('checkouts.store');
+	Route::get('/store/success', 'Frontend\CheckoutsController@success')->name('checkouts.store.success');
 
 
 });

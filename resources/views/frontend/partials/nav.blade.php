@@ -1,7 +1,7 @@
 
 			<!-- Start Navbar -->
 
-				<nav class="navbar navbar-expand-lg navbar-light  nav-block nav-bg-color fixed-top">
+				<nav class="navbar navbar-expand-lg navbar-light  nav-block nav-bg-color ">
 
 			<div class="container-fluid">
 
